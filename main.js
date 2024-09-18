@@ -7,6 +7,14 @@ if (myStore.length===0) {
 }
 let arr = JSON.parse(myStore.getItem(0));
 
+let tempArr = [];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== null)
+        tempArr.push(arr[i]);
+}
+arr = tempArr;
+myStore.setItem(0,JSON.stringify(arr));
+
 for (let i = 0; i < arr.length; i++) {
     if (arr[i] !== null) {
         let todo__item = document.createElement("li");

@@ -10,7 +10,7 @@ button, input {
 button {
     cursor: pointer;
 }
-input:active, input:focus {
+input:active, input:focus, button:active, button:focus {
     outline: none;
 }
 ul, li {
