@@ -44,23 +44,34 @@ body {
 .todo__item {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     font-weight: 700;
     cursor: pointer;
     background-color: rgb(179, 172, 172);
-    padding: 20px;
     transition: background-color 0.3s;
+}
+.todo__li {
+    padding: 20px;
 }
 .todo__item:nth-child(even) {
     background-color: rgb(214, 209, 209);
 }
 .todo__item:hover {
     background-color: rgb(151, 144, 144);
-    color: #fff;
 }
 .todo__item.completed {
     background-color: var(--acent-color);
-    color: #fff;
 }
 .todo__item.completed .todo__li {
+    color: #fff;
     text-decoration: line-through;
+}
+.todo__item .todo__delete {
+    padding: 20px;
+    transition: background-color 0.3s ease-in;
+}
+.todo__item .todo__delete:hover {
+    background-color: rgb(253, 28, 28);
+    color: #fff;
+    padding: 20px;
 }
