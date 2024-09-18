@@ -1,3 +1,9 @@
 body, html {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(49, 44, 44);
+}
+.todo {
+    background-color: #fff;
+    margin: 100px auto 0;
+    width: 50%;
 }
