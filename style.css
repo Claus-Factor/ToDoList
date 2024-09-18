@@ -55,3 +55,8 @@ body {
     background-color: rgb(151, 144, 144);
     color: #fff;
 }
+.todo__item.completed {
+    background-color: var(--acent-color);
+    color: #fff;
+    text-decoration: line-through;
+}
