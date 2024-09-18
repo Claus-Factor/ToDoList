@@ -36,9 +36,14 @@ body, html {
     margin-top: 20px;
 }
 .todo__item {
+    cursor: pointer;
     background-color: rgb(179, 172, 172);
     padding: 20px;
+    transition: background-color 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .todo__item:nth-child(even) {
     background-color: rgb(214, 209, 209);
+}
+.todo__item:hover {
+    background-color: rgb(151, 144, 144);
 }
