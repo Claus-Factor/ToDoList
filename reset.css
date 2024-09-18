@@ -12,3 +12,6 @@ button {
 input:active, input:focus {
     outline: none;
 }
+ul, li {
+    list-style-type: none;
+}
