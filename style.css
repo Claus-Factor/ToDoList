@@ -74,5 +74,15 @@ body {
 .todo__item .todo__delete:hover {
     background-color: rgb(253, 28, 28);
     color: #fff;
+}
+.todo__item>div {
+    display: flex;
+}
+.todo__item .todo__arrow {
     padding: 20px;
+    transition: background-color 0.3s ease-in;
+}
+.todo__item .todo__arrow:hover {
+    background-color: rgb(33, 255, 62);
+    color: #fff;
 }
