@@ -2,7 +2,7 @@ const todo__list = document.querySelector(".todo__list ul")
 const btn = document.querySelector(".todo__input button")
 
 let myStore = window.localStorage;
-if (myStore.length===0) {
+if (myStore.length===0 || myStore.length===8) {
     myStore.setItem(0,"[]");
     myStore.setItem(1,"[]");
 }
